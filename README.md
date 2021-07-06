@@ -40,4 +40,8 @@ sudo make install
    ```
    roslaunch lidar_imu_calib calib_exR_lidar2imu.launch
    ```
+### note
+
+- Replace your bag path in calib_exR_lidar2imu.launch
+- This Initial alignment function in this tool is used for high precision IMU(FOG), requiring static for 60s. For mems grade IMU, just use the orientation quat provided by AHRS algorithm.  
 
